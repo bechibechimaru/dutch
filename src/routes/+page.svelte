@@ -2,12 +2,12 @@
     let num1 = 0;
     let num2 = 0;
 
-    let result: number | null = null;
+    let result: string | null = null;
 // "|"というのは"or"と同義。result という変数の型をnumber or nullに設定するという意味
 // 「numberかnullというtypeのresultという変数を宣言し、初期値をnullにします。」ということ。
 
     function culfunc(){
-        result = num1 + num2;
+        result = (num1 + num2).toLocaleString();
     }
 </script>
 
@@ -18,5 +18,5 @@
 
 <!-- svelteの条件付きレレンダリングを使用 -->
 {#if result !== null}
-    <p>結果：{result}</p>
+    <p>結果：{result}円</p>
 {/if}
