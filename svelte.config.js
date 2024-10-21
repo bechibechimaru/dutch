@@ -9,7 +9,7 @@ export default {
             fallback: null
         }),
         paths: {
-            base: ''
+            base: process.env.NODE_ENV === 'production' ? '/dutch' : ''
         }
     },
     preprocess: preprocess()
