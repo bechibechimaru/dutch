@@ -6,11 +6,12 @@ export default {
         adapter: adapter({
             pages: 'build',
             assets: 'build',
-            fallback: null
+            fallback: null,
+            precompress: false
         }),
         paths: {
-            base: process.env.NODE_ENV === 'production' ? '/dutch' : ''
+            base: '/dutch'
         }
     },
-    preprocess: preprocess()
+    preprocess: preprocess(), // TypeScriptサポートを有効にする
 };
