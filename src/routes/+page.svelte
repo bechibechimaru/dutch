@@ -33,11 +33,11 @@
         }
     }
 
-    function formatTotalAmount(event: InputEvent): void {
-        const input = (event.target as HTMLInputElement);
-        const rawValue = input.value.replace(/,/g, ''); // カンマを取り除く
-        totalAmount = parseInt(rawValue, 10) || 0;
-        formattedAmount = totalAmount.toLocaleString(); // カンマ区切りでフォーマット
+    function formatTotalAmount(event: Event): void {
+    const input = event.currentTarget as HTMLInputElement;
+    const rawValue = input.value.replace(/,/g, ''); // カンマを取り除く
+    totalAmount = parseInt(rawValue, 10) || 0;
+    formattedAmount = totalAmount.toLocaleString(); // カンマ区切りでフォーマット
     }
 
     function calculatePaidAmount(): number {
@@ -85,16 +85,13 @@
 </main>
 
 <style>
-    body {
-        margin: 0px;
-        padding: 50px;
-        overflow-y: auto; /* 全体スクロールを許可 */
-    }
-
     main {
         width: 390px;
         max-width: 100%;
+        margin: 0px;
         margin-bottom: 100px;
+        padding: 50px;
+        overflow-y: auto; /* 全体スクロールを許可 */
     }
 
     .info {
