@@ -2,7 +2,7 @@ import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 import { config } from 'typescript-eslint';
 
-const dev = process.argv.includes('dev');
+const dev = process.env.NODE_ENV === 'development';
 
 export default {
     kit: {
