@@ -1,6 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
-import { config } from 'typescript-eslint';
 
 const dev = process.env.NODE_ENV === 'development';
 
@@ -14,9 +13,7 @@ export default {
         }),
         paths: {
             base: dev ? '' : '/dutch',
-            assets: dev ? '' : '/dutch' 
         },
-        trailingSlash: 'always'  
     },
     preprocess: preprocess(), // TypeScriptサポートを有効にする
 };
