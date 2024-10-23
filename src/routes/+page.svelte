@@ -94,6 +94,10 @@
         overflow-y: auto; /* 全体スクロールを許可 */
     }
 
+    h1{
+        color: red;
+    }
+
     .info {
         display: flex;
         align-items: center;
