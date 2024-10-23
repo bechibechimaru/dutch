@@ -7,7 +7,7 @@ export default {
     kit: {
         adapter: adapter({
             pages: 'build',
-            assets: 'build',                    
+            assets: 'build',
         }),
         paths: {
             base: dev ? '' : '/dutch',
