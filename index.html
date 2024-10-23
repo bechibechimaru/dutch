@@ -5,14 +5,14 @@
 		<link rel="icon" href="/dutch/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link href="/dutch/_app/immutable/assets/2.BBrDxZZI.css" rel="stylesheet">
-		<link rel="modulepreload" href="/dutch/_app/immutable/entry/start.B5UcXCQh.js">
-		<link rel="modulepreload" href="/dutch/_app/immutable/chunks/entry.DSh4W2mJ.js">
-		<link rel="modulepreload" href="/dutch/_app/immutable/chunks/scheduler.BvLojk_z.js">
-		<link rel="modulepreload" href="/dutch/_app/immutable/entry/app.E2IYN2AU.js">
-		<link rel="modulepreload" href="/dutch/_app/immutable/chunks/index.CG6y-W0u.js">
-		<link rel="modulepreload" href="/dutch/_app/immutable/nodes/0.BGYxPaRM.js">
-		<link rel="modulepreload" href="/dutch/_app/immutable/nodes/2.KE3qowvl.js">
+		<link href="dutch/_app/immutable/assets/2.BBrDxZZI.css" rel="stylesheet">
+		<link rel="modulepreload" href="dutch/_app/immutable/entry/start.B5UcXCQh.js">
+		<link rel="modulepreload" href="dutch/_app/immutable/chunks/entry.DSh4W2mJ.js">
+		<link rel="modulepreload" href="dutch/_app/immutable/chunks/scheduler.BvLojk_z.js">
+		<link rel="modulepreload" href="dutch/_app/immutable/entry/app.E2IYN2AU.js">
+		<link rel="modulepreload" href="dutch/_app/immutable/chunks/index.CG6y-W0u.js">
+		<link rel="modulepreload" href="dutch/_app/immutable/nodes/0.BGYxPaRM.js">
+		<link rel="modulepreload" href="dutch/_app/immutable/nodes/2.KE3qowvl.js">
 		<title>割り勘</title>
 	</head>
 	<body data-sveltekit-preload-data="hover">
@@ -37,8 +37,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("/dutch/_app/immutable/entry/start.B5UcXCQh.js"),
-						import("/dutch/_app/immutable/entry/app.E2IYN2AU.js")
+						import("dutch/_app/immutable/entry/start.B5UcXCQh.js"),
+						import("dutch/_app/immutable/entry/app.E2IYN2AU.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
