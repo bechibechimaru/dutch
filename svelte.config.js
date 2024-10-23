@@ -13,7 +13,8 @@ export default {
             precompress: false
         }),
         paths: {
-            base: dev ? '' : '/dutch'
+            base: dev ? '' : '/dutch',
+            assets: dev ? '' : '/dutch' 
         }
     },
     preprocess: preprocess(), // TypeScriptサポートを有効にする
