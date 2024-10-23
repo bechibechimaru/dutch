@@ -15,7 +15,8 @@ export default {
         paths: {
             base: dev ? '' : '/dutch',
             assets: dev ? '' : '/dutch' 
-        }
+        },
+        trailingSlash: 'always'  
     },
     preprocess: preprocess(), // TypeScriptサポートを有効にする
 };
